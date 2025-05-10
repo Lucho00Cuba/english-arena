@@ -1,0 +1,219 @@
+[
+  {
+    "type": "text",
+    "question": "How do you write the number 1 in English?",
+    "answer": "One",
+    "hint": "It starts with 'O'."
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 3?",
+    "answer": "Three",
+    "hint": "It starts with 'Th'."
+  },
+  {
+    "type": "true-false",
+    "question": "The word for 5 is 'Five'.",
+    "answer": true
+  },
+  {
+    "type": "true-false",
+    "question": "The number 10 is written as 'Teen'.",
+    "answer": false
+  },
+  {
+    "type": "multi-select",
+    "question": "Select all numbers that are even:",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "answer": [
+      "Two",
+      "Four"
+    ],
+    "hint": "Even numbers can be divided by 2."
+  },
+  {
+    "type": "multi-select",
+    "question": "Which are ordinal numbers?",
+    "options": [
+      "First",
+      "Second",
+      "Three",
+      "Fourth"
+    ],
+    "answer": [
+      "First",
+      "Second",
+      "Fourth"
+    ],
+    "hint": "Ordinal numbers describe order."
+  },
+  {
+    "type": "matching",
+    "question": "Match the numbers with their words:",
+    "pairs": [
+      {
+        "left": "1",
+        "right": "One"
+      },
+      {
+        "left": "2",
+        "right": "Two"
+      },
+      {
+        "left": "3",
+        "right": "Three"
+      }
+    ]
+  },
+  {
+    "type": "matching",
+    "question": "Match the ordinal numbers with their positions:",
+    "pairs": [
+      {
+        "left": "1st",
+        "right": "First"
+      },
+      {
+        "left": "2nd",
+        "right": "Second"
+      },
+      {
+        "left": "3rd",
+        "right": "Third"
+      }
+    ]
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I have ___ cats and ___ dogs.",
+    "answers": [
+      [
+        "two",
+        "2"
+      ],
+      [
+        "three",
+        "3"
+      ]
+    ],
+    "hint": "Use cardinal numbers."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She finished in ___ place.",
+    "answers": [
+      [
+        "first",
+        "1st"
+      ]
+    ],
+    "hint": "Use an ordinal number."
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 4?",
+    "answer": "Four",
+    "hint": "It starts with 'Fo...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 5?",
+    "answer": "Five",
+    "hint": "It starts with 'Fi...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 6?",
+    "answer": "Six",
+    "hint": "It starts with 'Si...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 7?",
+    "answer": "Seven",
+    "hint": "It starts with 'Se...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 8?",
+    "answer": "Eight",
+    "hint": "It starts with 'Ei...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 9?",
+    "answer": "Nine",
+    "hint": "It starts with 'Ni...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 10?",
+    "answer": "Ten",
+    "hint": "It starts with 'Te...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 11?",
+    "answer": "Eleven",
+    "hint": "It starts with 'El...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 12?",
+    "answer": "Twelve",
+    "hint": "It starts with 'Tw...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 13?",
+    "answer": "Thirteen",
+    "hint": "It starts with 'Th...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 14?",
+    "answer": "Fourteen",
+    "hint": "It starts with 'Fo...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 15?",
+    "answer": "Fifteen",
+    "hint": "It starts with 'Fi...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 16?",
+    "answer": "Sixteen",
+    "hint": "It starts with 'Si...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 17?",
+    "answer": "Seventeen",
+    "hint": "It starts with 'Se...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 18?",
+    "answer": "Eighteen",
+    "hint": "It starts with 'Ei...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 19?",
+    "answer": "Nineteen",
+    "hint": "It starts with 'Ni...'"
+  },
+  {
+    "type": "text",
+    "question": "What is the English word for the number 20?",
+    "answer": "Twenty",
+    "hint": "It starts with 'Tw...'"
+  }
+]

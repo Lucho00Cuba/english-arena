@@ -1,40 +1,369 @@
 [
   {
     "type": "text",
-    "question": "What is the first letter of the English alphabet?",
-    "options": ["A", "B", "C", "D"],
-    "answer": "A",
-    "hint": "The letter A is the first letter of the alphabet."
+    "question": "What is the phonetic pronunciation of the letter J?",
+    "options": [
+      "em",
+      "eks",
+      "uai",
+      "jei"
+    ],
+    "answer": "jei",
+    "hint": "The letter J sounds like 'jei'."
   },
   {
     "type": "true-false",
-    "question": "The letter Z comes before A.",
-    "answer": false
+    "question": "The letter G comes before M in the alphabet.",
+    "answer": true
   },
   {
     "type": "multi-select",
-    "question": "Select all vowels:",
-    "options": ["A", "E", "B", "O"],
-    "answer": ["A", "E", "O"],
-    "hint": "There are three correct vowels in this list."
+    "question": "Select all the vowels from the options:",
+    "options": [
+      "G",
+      "A",
+      "O",
+      "U"
+    ],
+    "answer": [
+      "A",
+      "O",
+      "U"
+    ],
+    "hint": "There are 5 vowels in total in the English alphabet."
   },
   {
     "type": "matching",
     "question": "Match the letters with their phonetic names:",
     "pairs": [
-      { "left": "A", "right": "Alpha" },
-      { "left": "B", "right": "Bravo" },
-      { "left": "C", "right": "Charlie" }
+      {
+        "left": "Y",
+        "right": "uai"
+      },
+      {
+        "left": "P",
+        "right": "pi"
+      },
+      {
+        "left": "L",
+        "right": "el"
+      }
     ]
   },
   {
     "type": "fill-in-the-blank",
-    "question": "I ___ from Spain. She ___ from France. We ___ from England.",
+    "question": "A, B, C, D, E, F, G, ___, I, ___, K, L, M, ___",
     "answers": [
-      ["am", "'m"],
-      ["is", "'s"],
-      ["are", "'re"]
+      [
+        "H"
+      ],
+      [
+        "J"
+      ],
+      [
+        "N"
+      ]
     ],
-    "hint": "Think of the first few vowels in the alphabet."
+    "hint": "Fill in the missing letters in the alphabet sequence."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'A'?",
+    "options": [
+      "ei",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "ei",
+    "hint": "The phonetic for 'A' is pronounced 'ei'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'B'?",
+    "options": [
+      "bi",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "bi",
+    "hint": "The phonetic for 'B' is pronounced 'bi'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'C'?",
+    "options": [
+      "si",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "si",
+    "hint": "The phonetic for 'C' is pronounced 'si'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'D'?",
+    "options": [
+      "di",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "di",
+    "hint": "The phonetic for 'D' is pronounced 'di'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'E'?",
+    "options": [
+      "i",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "i",
+    "hint": "The phonetic for 'E' is pronounced 'i'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'F'?",
+    "options": [
+      "ef",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "ef",
+    "hint": "The phonetic for 'F' is pronounced 'ef'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'G'?",
+    "options": [
+      "yi",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "yi",
+    "hint": "The phonetic for 'G' is pronounced 'yi'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'H'?",
+    "options": [
+      "eich",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "eich",
+    "hint": "The phonetic for 'H' is pronounced 'eich'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'I'?",
+    "options": [
+      "ai",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "ai",
+    "hint": "The phonetic for 'I' is pronounced 'ai'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'J'?",
+    "options": [
+      "jei",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "jei",
+    "hint": "The phonetic for 'J' is pronounced 'jei'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'K'?",
+    "options": [
+      "kei",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "kei",
+    "hint": "The phonetic for 'K' is pronounced 'kei'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'L'?",
+    "options": [
+      "el",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "el",
+    "hint": "The phonetic for 'L' is pronounced 'el'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'M'?",
+    "options": [
+      "em",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "em",
+    "hint": "The phonetic for 'M' is pronounced 'em'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'N'?",
+    "options": [
+      "en",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "en",
+    "hint": "The phonetic for 'N' is pronounced 'en'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'O'?",
+    "options": [
+      "ou",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "ou",
+    "hint": "The phonetic for 'O' is pronounced 'ou'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'P'?",
+    "options": [
+      "pi",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "pi",
+    "hint": "The phonetic for 'P' is pronounced 'pi'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'Q'?",
+    "options": [
+      "kiu",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "kiu",
+    "hint": "The phonetic for 'Q' is pronounced 'kiu'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'R'?",
+    "options": [
+      "ar",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "ar",
+    "hint": "The phonetic for 'R' is pronounced 'ar'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'S'?",
+    "options": [
+      "es",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "es",
+    "hint": "The phonetic for 'S' is pronounced 'es'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'T'?",
+    "options": [
+      "ti",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "ti",
+    "hint": "The phonetic for 'T' is pronounced 'ti'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'U'?",
+    "options": [
+      "iu",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "iu",
+    "hint": "The phonetic for 'U' is pronounced 'iu'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'V'?",
+    "options": [
+      "vi",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "vi",
+    "hint": "The phonetic for 'V' is pronounced 'vi'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'W'?",
+    "options": [
+      "dabliu",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "dabliu",
+    "hint": "The phonetic for 'W' is pronounced 'dabliu'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'X'?",
+    "options": [
+      "eks",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "eks",
+    "hint": "The phonetic for 'X' is pronounced 'eks'."
+  },
+  {
+    "type": "text",
+    "question": "What is the phonetic name of the letter 'Y'?",
+    "options": [
+      "uai",
+      "xyz",
+      "abc",
+      "ooo"
+    ],
+    "answer": "uai",
+    "hint": "The phonetic for 'Y' is pronounced 'uai'."
   }
 ]
