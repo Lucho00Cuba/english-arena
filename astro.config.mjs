@@ -17,8 +17,4 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
   },
-
-  // github-pages
-  site: 'https://lucho00cuba.github.io',
-  base: 'english-arena',
 });
