@@ -23,7 +23,7 @@ Welcome to **English Arena** — an interactive learning platform for practicing
    npm run dev
    ```
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:4321) with your browser to see the result.
 
 ## ✨ Features
 
