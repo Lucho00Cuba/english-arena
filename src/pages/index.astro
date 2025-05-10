@@ -1,11 +1,32 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="English Arena | Home"
+  description="Start learning English in an interactive and fun way!"
+>
+  <section class="text-center py-20">
+    <h1 class="text-5xl font-extrabold mb-4">🎯 Welcome to English Arena</h1>
+    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+      Learn English by topics with interactive quizzes, examples, and immediate
+      feedback. Improve your vocabulary, grammar, and comprehension while having
+      fun!
+    </p>
+    <a
+      href="/topics"
+      class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      🚀 Start Learning
+    </a>
+  </section>
+
+  <section class="py-2 text-center">
+    <h2 class="text-3xl font-bold mb-4">📚 How It Works</h2>
+    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+      Choose a topic, read an explanation, then test your knowledge with dynamic
+      quizzes. Track your progress, retry what you miss, and celebrate your
+      wins!
+    </p>
+  </section>
 </Layout>

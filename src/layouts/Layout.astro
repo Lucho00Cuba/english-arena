@@ -1,22 +1,60 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "@/styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Footer from "@/components/Footer.astro";
+import ThemeToggle from "@/components/ThemeToggle";
+const {
+  title,
+  description = "English Arena: Practice English by topic with quizzes and examples.",
+} = Astro.props;
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="keywords"
+      content="English, Quiz, Practice, Learn, Vocabulary, Grammar"
+    />
+    <meta name="author" content="English Arena Team" />
+    <title>{title}</title>
+    <ClientRouter />
+    <script is:inline>
+      function applyTheme() {
+        localStorage.theme === "dark"
+          ? document.documentElement.classList.add("dark")
+          : document.documentElement.classList.remove("dark");
+      }
+
+      document.addEventListener("astro:after-swap", applyTheme);
+      applyTheme();
+    </script>
+  </head>
+  <body
+    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-screen font-sans"
+  >
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700"
+    >
+      <a
+        href="/"
+        class="text-xl font-bold focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        English Arena
+      </a>
+      <ThemeToggle client:load />
+    </header>
+
+    <!-- Main content -->
+    <main class="max-w-7xl mx-auto px-4 py-8" role="main">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <Footer />
+  </body>
+</html>
