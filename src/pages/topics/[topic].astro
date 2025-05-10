@@ -1,0 +1,57 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Quiz from "@/components/Quiz";
+import Breadcrumb from "@/components/Breadcrumb";
+import TableOfContents from "@/components/TableOfContent";
+
+export async function getStaticPaths() {
+  const topics = await getCollection("topics");
+  return topics.map((entry) => ({
+    params: { topic: entry.slug },
+  }));
+}
+
+const { params } = Astro;
+const entry = await getEntry("topics", params.topic);
+if (!entry) throw new Error(`Topic not found: ${params.topic}`);
+
+const { Content } = await entry.render();
+const data = entry.data;
+
+const breadcrumbItems = [
+  { name: "Home", href: "/" },
+  { name: "Topics", href: "/topics" },
+  { name: data.title },
+];
+---
+
+<Layout title={`${data.title} | English Arena`} description={data.description}>
+  <div class="mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-8">
+    <header>
+      <h1 class="text-3xl font-bold mb-2">{data.title}</h1>
+      <Breadcrumb client:only="react" items={breadcrumbItems} />
+      {
+        data.tags && data.tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-2">
+            {data.tags.map((tag) => (
+              <span class="inline-block px-3 py-1 text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100 rounded-full">
+                #{tag}
+              </span>
+            ))}
+          </div>
+        )
+      }
+    </header>
+
+    <article class="prose prose-lg dark:prose-invert max-w-none">
+      <Content />
+    </article>
+
+    <section>
+      <Quiz client:load topic={params.topic} />
+    </section>
+  </div>
+
+  <TableOfContents client:only="react" />
+</Layout>

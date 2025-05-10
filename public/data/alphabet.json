@@ -1,0 +1,40 @@
+[
+  {
+    "type": "text",
+    "question": "What is the first letter of the English alphabet?",
+    "options": ["A", "B", "C", "D"],
+    "answer": "A",
+    "hint": "The letter A is the first letter of the alphabet."
+  },
+  {
+    "type": "true-false",
+    "question": "The letter Z comes before A.",
+    "answer": false
+  },
+  {
+    "type": "multi-select",
+    "question": "Select all vowels:",
+    "options": ["A", "E", "B", "O"],
+    "answer": ["A", "E", "O"],
+    "hint": "There are three correct vowels in this list."
+  },
+  {
+    "type": "matching",
+    "question": "Match the letters with their phonetic names:",
+    "pairs": [
+      { "left": "A", "right": "Alpha" },
+      { "left": "B", "right": "Bravo" },
+      { "left": "C", "right": "Charlie" }
+    ]
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I ___ from Spain. She ___ from France. We ___ from England.",
+    "answers": [
+      ["am", "'m"],
+      ["is", "'s"],
+      ["are", "'re"]
+    ],
+    "hint": "Think of the first few vowels in the alphabet."
+  }
+]

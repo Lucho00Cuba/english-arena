@@ -25,6 +25,22 @@ Welcome to **English Arena** — an interactive learning platform for practicing
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## ✨ Features
+
+- ✅ Topic-based quizzes with random questions
+- ✅ Supports multiple question types:
+  - Text input
+  - True/False
+  - Multi-select
+  - Matching
+  - Fill in the blank
+- ✅ Progress bar and animated celebration on completion
+- ✅ Responsive design and dark/light theme support
+- ✅ Search and filter topics
+- ✅ Sidebar with Table of Contents (like Notion)
+- ✅ Tags for content classification (e.g. Beginner, Grammar, Listening)
+- ✅ Fully accessible and keyboard-friendly
+
 # 📋 Contributing
 
 Pull requests and suggestions are welcome! Please open an issue first if you want to propose major changes.
