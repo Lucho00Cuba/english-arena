@@ -1,0 +1,310 @@
+[
+  {
+    "type": "fill-in-the-blank",
+    "question": "This is ___ book.",
+    "answers": [
+      [
+        "my"
+      ]
+    ],
+    "hint": "Use a possessive adjective for 'I'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The blue car is ___.",
+    "answers": [
+      [
+        "mine"
+      ]
+    ],
+    "hint": "Use a possessive pronoun for 'I'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Is this pencil ___?",
+    "answers": [
+      [
+        "yours"
+      ]
+    ],
+    "hint": "Use a possessive pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ house is near the park.",
+    "answers": [
+      [
+        "Their"
+      ]
+    ],
+    "hint": "Use a possessive adjective for 'they'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "These toys belong to the girls. They are the ___ toys.",
+    "answers": [
+      [
+        "girls'"
+      ]
+    ],
+    "hint": "Use the genitive case with a plural noun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "That bike belongs to Paul. It is ___.",
+    "answers": [
+      [
+        "Paul's"
+      ]
+    ],
+    "hint": "Use the genitive case with a name."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Where are ___ parents?",
+    "answers": [
+      [
+        "your"
+      ]
+    ],
+    "hint": "Use a possessive adjective."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Those are not our seats. They are ___.",
+    "answers": [
+      [
+        "theirs"
+      ]
+    ],
+    "hint": "Use a possessive pronoun."
+  },
+  {
+    "type": "multi-select",
+    "question": "Which of the following are possessive pronouns?",
+    "options": [
+      "mine",
+      "her",
+      "ours",
+      "your"
+    ],
+    "answer": [
+      "mine",
+      "ours"
+    ],
+    "hint": "Possessive pronouns stand alone, without a noun after them."
+  },
+  {
+    "type": "true-false",
+    "question": "The word 'his' can function as both a possessive adjective and a possessive pronoun.",
+    "answer": true
+  },
+  {
+    "type": "text",
+    "question": "What is the possessive adjective for 'we'?",
+    "answer": "our",
+    "hint": "It's used before a noun to show ownership by a group including the speaker."
+  },
+  {
+    "type": "matching",
+    "question": "Match the subject pronouns with their possessive adjectives:",
+    "pairs": [
+      {
+        "left": "I",
+        "right": "my"
+      },
+      {
+        "left": "you",
+        "right": "your"
+      },
+      {
+        "left": "he",
+        "right": "his"
+      },
+      {
+        "left": "we",
+        "right": "our"
+      }
+    ]
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The dog doesn't like to be on ___ own.",
+    "answers": [
+      [
+        "its"
+      ]
+    ],
+    "hint": "Use a possessive adjective."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The red bag is not mine. It's ___.",
+    "answers": [
+      [
+        "hers"
+      ]
+    ],
+    "hint": "Use a possessive pronoun referring to 'she'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "This is ___ idea.",
+    "answers": [
+      [
+        "his"
+      ]
+    ],
+    "hint": "Use a possessive adjective referring to 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The exams belong to the students. They are the ___.",
+    "answers": [
+      [
+        "students'"
+      ]
+    ],
+    "hint": "Use the genitive case for plural."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Washington is the capital ___ the United States.",
+    "answers": [
+      [
+        "of"
+      ]
+    ],
+    "hint": "Use a preposition to express possession with places."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Washington is the capital ___ the United States.",
+    "answers": [
+      [
+        "of"
+      ]
+    ],
+    "hint": "Use a preposition to express possession with places."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Washington is the capital ___ the United States.",
+    "answers": [
+      [
+        "of"
+      ]
+    ],
+    "hint": "Use a preposition to express possession with places."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The exams belong to the students. They are the ___.",
+    "answers": [
+      [
+        "students'"
+      ]
+    ],
+    "hint": "Use the genitive case for plural."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Washington is the capital ___ the United States.",
+    "answers": [
+      [
+        "of"
+      ]
+    ],
+    "hint": "Use a preposition to express possession with places."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The dog doesn't like to be on ___ own.",
+    "answers": [
+      [
+        "its"
+      ]
+    ],
+    "hint": "Use a possessive adjective."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The dog doesn't like to be on ___ own.",
+    "answers": [
+      [
+        "its"
+      ]
+    ],
+    "hint": "Use a possessive adjective."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Washington is the capital ___ the United States.",
+    "answers": [
+      [
+        "of"
+      ]
+    ],
+    "hint": "Use a preposition to express possession with places."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The dog doesn't like to be on ___ own.",
+    "answers": [
+      [
+        "its"
+      ]
+    ],
+    "hint": "Use a possessive adjective."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The red bag is not mine. It's ___.",
+    "answers": [
+      [
+        "hers"
+      ]
+    ],
+    "hint": "Use a possessive pronoun referring to 'she'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Washington is the capital ___ the United States.",
+    "answers": [
+      [
+        "of"
+      ]
+    ],
+    "hint": "Use a preposition to express possession with places."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "This is ___ idea.",
+    "answers": [
+      [
+        "his"
+      ]
+    ],
+    "hint": "Use a possessive adjective referring to 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The dog doesn't like to be on ___ own.",
+    "answers": [
+      [
+        "its"
+      ]
+    ],
+    "hint": "Use a possessive adjective."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The exams belong to the students. They are the ___.",
+    "answers": [
+      [
+        "students'"
+      ]
+    ],
+    "hint": "Use the genitive case for plural."
+  }
+]

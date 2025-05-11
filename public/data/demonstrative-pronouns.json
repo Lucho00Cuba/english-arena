@@ -1,0 +1,301 @@
+[
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is my favorite book.",
+    "answers": [
+      [
+        "This"
+      ]
+    ],
+    "hint": "Use the correct demonstrative pronoun for something near and singular."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Look at ___ stars in the sky!",
+    "answers": [
+      [
+        "those"
+      ]
+    ],
+    "hint": "Use the demonstrative pronoun for plural and far away."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is the restaurant I told you about.",
+    "answers": [
+      [
+        "That"
+      ]
+    ],
+    "hint": "Refers to a specific place previously mentioned or at a distance."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are my friends from school.",
+    "answers": [
+      [
+        "These"
+      ]
+    ],
+    "hint": "Use the demonstrative for nearby plural objects or people."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Peter, is ___ you?",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Use when unsure who you're speaking to."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ pizza was delicious.",
+    "answers": [
+      [
+        "That"
+      ]
+    ],
+    "hint": "Refers to something in the past."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Who are ___ people over there?",
+    "answers": [
+      [
+        "those"
+      ]
+    ],
+    "hint": "Use the demonstrative for far and plural."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Hello, ___ is Mark speaking.",
+    "answers": [
+      [
+        "this"
+      ]
+    ],
+    "hint": "Use for introducing yourself on the phone."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is my dog. His name is Max.",
+    "answers": [
+      [
+        "This"
+      ]
+    ],
+    "hint": "Used for singular things that are near."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I don\u2019t like ___ apples. They\u2019re too sour.",
+    "answers": [
+      [
+        "these"
+      ]
+    ],
+    "hint": "Use for nearby plural objects."
+  },
+  {
+    "type": "multi-select",
+    "question": "Which of the following are demonstrative pronouns?",
+    "options": [
+      "this",
+      "he",
+      "those",
+      "mine"
+    ],
+    "answer": [
+      "this",
+      "those"
+    ],
+    "hint": "Demonstrative pronouns point to specific things and indicate distance."
+  },
+  {
+    "type": "true-false",
+    "question": "\u2018This\u2019 can be used to introduce someone.",
+    "answer": true
+  },
+  {
+    "type": "true-false",
+    "question": "\u2018Those\u2019 is used for singular items that are near.",
+    "answer": false
+  },
+  {
+    "type": "text",
+    "question": "What is the plural form of 'this'?",
+    "answer": "these",
+    "hint": "It's used when referring to multiple things that are near."
+  },
+  {
+    "type": "text",
+    "question": "What demonstrative pronoun would you use to talk about a book in your hands?",
+    "answer": "this",
+    "hint": "It's singular and near."
+  },
+  {
+    "type": "matching",
+    "question": "Match the demonstrative pronouns with their description:",
+    "pairs": [
+      {
+        "left": "this",
+        "right": "singular, near"
+      },
+      {
+        "left": "that",
+        "right": "singular, far"
+      },
+      {
+        "left": "these",
+        "right": "plural, near"
+      },
+      {
+        "left": "those",
+        "right": "plural, far"
+      }
+    ]
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are beautiful flowers.",
+    "answers": [
+      [
+        "These"
+      ]
+    ],
+    "hint": "Plural and near."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Can you pass me ___ pen over there?",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Refers to something at a distance."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I remember ___ day. It was wonderful.",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Refers to something in the past."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is my cousin Anna.",
+    "answers": [
+      [
+        "This"
+      ]
+    ],
+    "hint": "Used when introducing someone."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Can you pass me ___ pen over there?",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Refers to something at a distance."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are beautiful flowers.",
+    "answers": [
+      [
+        "These"
+      ]
+    ],
+    "hint": "Plural and near."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I remember ___ day. It was wonderful.",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Refers to something in the past."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are beautiful flowers.",
+    "answers": [
+      [
+        "These"
+      ]
+    ],
+    "hint": "Plural and near."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Who owns ___ shoes on the shelf?",
+    "answers": [
+      [
+        "those"
+      ]
+    ],
+    "hint": "Plural and far."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are beautiful flowers.",
+    "answers": [
+      [
+        "These"
+      ]
+    ],
+    "hint": "Plural and near."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I remember ___ day. It was wonderful.",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Refers to something in the past."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are beautiful flowers.",
+    "answers": [
+      [
+        "These"
+      ]
+    ],
+    "hint": "Plural and near."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Can you pass me ___ pen over there?",
+    "answers": [
+      [
+        "that"
+      ]
+    ],
+    "hint": "Refers to something at a distance."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is my cousin Anna.",
+    "answers": [
+      [
+        "This"
+      ]
+    ],
+    "hint": "Used when introducing someone."
+  }
+]

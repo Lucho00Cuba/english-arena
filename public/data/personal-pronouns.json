@@ -1,0 +1,420 @@
+[
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ am going to the store.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Can you help ___ with this exercise?",
+    "answers": [
+      [
+        "me"
+      ]
+    ],
+    "hint": "Use the correct object pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "He is taller than ___.",
+    "answers": [
+      [
+        "me"
+      ]
+    ],
+    "hint": "Use the correct object pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are my best friends.",
+    "answers": [
+      [
+        "They"
+      ]
+    ],
+    "hint": "Use the subject pronoun for a group."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "This book is for ___.",
+    "answers": [
+      [
+        "you"
+      ]
+    ],
+    "hint": "Use the correct object pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is raining outside.",
+    "answers": [
+      [
+        "It"
+      ]
+    ],
+    "hint": "Used for weather."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Can you see ___ over there?",
+    "answers": [
+      [
+        "him",
+        "her",
+        "them"
+      ]
+    ],
+    "hint": "Use an object pronoun to refer to people."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "My brother and ___ are going to the cinema.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Give the ball to ___.",
+    "answers": [
+      [
+        "us"
+      ]
+    ],
+    "hint": "Use an object pronoun for a group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is my dog. He is very friendly.",
+    "answers": [
+      [
+        "This"
+      ]
+    ],
+    "hint": "Use a demonstrative pronoun."
+  },
+  {
+    "type": "multi-select",
+    "question": "Which of the following are subject pronouns?",
+    "options": [
+      "He",
+      "Me",
+      "They",
+      "Us"
+    ],
+    "answer": [
+      "He",
+      "They"
+    ],
+    "hint": "Subject pronouns do the action in a sentence."
+  },
+  {
+    "type": "true-false",
+    "question": "The pronoun 'her' is used as a subject.",
+    "answer": false
+  },
+  {
+    "type": "text",
+    "question": "What is the object form of 'we'?",
+    "answer": "us",
+    "hint": "It refers to the speaker and someone else, as the object."
+  },
+  {
+    "type": "matching",
+    "question": "Match the subject pronouns with their object forms:",
+    "pairs": [
+      {
+        "left": "I",
+        "right": "Me"
+      },
+      {
+        "left": "We",
+        "right": "Us"
+      },
+      {
+        "left": "They",
+        "right": "Them"
+      },
+      {
+        "left": "She",
+        "right": "Her"
+      }
+    ]
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "That letter is for ___.",
+    "answers": [
+      [
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun, feminine."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She and ___ are cousins.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject form."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She and ___ are cousins.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject form."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "That letter is for ___.",
+    "answers": [
+      [
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun, feminine."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She and ___ are cousins.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject form."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "That letter is for ___.",
+    "answers": [
+      [
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun, feminine."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ are learning English.",
+    "answers": [
+      [
+        "We"
+      ]
+    ],
+    "hint": "Group including the speaker."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She and ___ are cousins.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject form."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She and ___ are cousins.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject form."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "___ is calling you.",
+    "answers": [
+      [
+        "He",
+        "She"
+      ]
+    ],
+    "hint": "Use a subject pronoun for a person."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The teacher asked ___ to stay.",
+    "answers": [
+      [
+        "him",
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun after verb."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She and ___ are cousins.",
+    "answers": [
+      [
+        "I"
+      ]
+    ],
+    "hint": "Use the correct subject form."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "That letter is for ___.",
+    "answers": [
+      [
+        "her"
+      ]
+    ],
+    "hint": "Object pronoun, feminine."
+  }
+]

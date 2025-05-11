@@ -1,0 +1,296 @@
+[
+  {
+    "type": "fill-in-the-blank",
+    "question": "He looked at ___ in the mirror.",
+    "answers": [
+      [
+        "himself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "We enjoyed ___ at the party.",
+    "answers": [
+      [
+        "ourselves"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'we'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Please help ___ to some cake.",
+    "answers": [
+      [
+        "yourself"
+      ]
+    ],
+    "hint": "Used when offering food."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She learned to play the piano all by ___.",
+    "answers": [
+      [
+        "herself"
+      ]
+    ],
+    "hint": "Reflexive used with 'by' to mean 'alone'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Behave ___!",
+    "answers": [
+      [
+        "yourselves"
+      ]
+    ],
+    "hint": "Used when addressing a group."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "I blame ___.",
+    "answers": [
+      [
+        "myself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'I'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "The dog chased ___.",
+    "answers": [
+      [
+        "itself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'it'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "We found ___ in the middle of a forest.",
+    "answers": [
+      [
+        "ourselves"
+      ]
+    ],
+    "hint": "Reflexive with a different meaning (unexpected discovery)."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Make ___ at home.",
+    "answers": [
+      [
+        "yourself"
+      ]
+    ],
+    "hint": "Expression used to welcome someone."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "John and Mary looked at ___ in surprise.",
+    "answers": [
+      [
+        "each other"
+      ]
+    ],
+    "hint": "Reciprocal pronoun for two people."
+  },
+  {
+    "type": "multi-select",
+    "question": "Which of the following are reflexive pronouns?",
+    "options": [
+      "herself",
+      "themselves",
+      "his",
+      "each other"
+    ],
+    "answer": [
+      "herself",
+      "themselves"
+    ],
+    "hint": "Reflexive pronouns reflect the subject."
+  },
+  {
+    "type": "true-false",
+    "question": "\u2018Yourself\u2019 is used when speaking to one person.",
+    "answer": true
+  },
+  {
+    "type": "true-false",
+    "question": "\u2018Yourselves\u2019 is the plural form of \u2018yourself\u2019.",
+    "answer": true
+  },
+  {
+    "type": "true-false",
+    "question": "Reflexive pronouns and reciprocal pronouns have the same function.",
+    "answer": false
+  },
+  {
+    "type": "text",
+    "question": "What reflexive pronoun corresponds to 'they'?",
+    "answer": "themselves",
+    "hint": "Used when 'they' act on themselves."
+  },
+  {
+    "type": "text",
+    "question": "What phrase is used to indicate a mutual action between two people?",
+    "answer": "each other",
+    "hint": "It's a reciprocal pronoun."
+  },
+  {
+    "type": "matching",
+    "question": "Match the subject pronouns with their reflexive forms:",
+    "pairs": [
+      {
+        "left": "I",
+        "right": "myself"
+      },
+      {
+        "left": "you (singular)",
+        "right": "yourself"
+      },
+      {
+        "left": "we",
+        "right": "ourselves"
+      },
+      {
+        "left": "they",
+        "right": "themselves"
+      }
+    ]
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She looked at ___ in the mirror.",
+    "answers": [
+      [
+        "herself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'she'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Do you see ___ in the photo?",
+    "answers": [
+      [
+        "yourself"
+      ]
+    ],
+    "hint": "Reflexive for 'you'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "He talked to ___.",
+    "answers": [
+      [
+        "himself"
+      ]
+    ],
+    "hint": "Reflexive form of 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She looked at ___ in the mirror.",
+    "answers": [
+      [
+        "herself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'she'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "He talked to ___.",
+    "answers": [
+      [
+        "himself"
+      ]
+    ],
+    "hint": "Reflexive form of 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She looked at ___ in the mirror.",
+    "answers": [
+      [
+        "herself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'she'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "They introduced ___.",
+    "answers": [
+      [
+        "themselves"
+      ]
+    ],
+    "hint": "Plural reflexive pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She looked at ___ in the mirror.",
+    "answers": [
+      [
+        "herself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'she'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "They introduced ___.",
+    "answers": [
+      [
+        "themselves"
+      ]
+    ],
+    "hint": "Plural reflexive pronoun."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "Do you see ___ in the photo?",
+    "answers": [
+      [
+        "yourself"
+      ]
+    ],
+    "hint": "Reflexive for 'you'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "He talked to ___.",
+    "answers": [
+      [
+        "himself"
+      ]
+    ],
+    "hint": "Reflexive form of 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "He talked to ___.",
+    "answers": [
+      [
+        "himself"
+      ]
+    ],
+    "hint": "Reflexive form of 'he'."
+  },
+  {
+    "type": "fill-in-the-blank",
+    "question": "She looked at ___ in the mirror.",
+    "answers": [
+      [
+        "herself"
+      ]
+    ],
+    "hint": "Reflexive pronoun for 'she'."
+  }
+]

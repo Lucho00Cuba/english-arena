@@ -1,0 +1,35 @@
+---
+const { type = "info" } = Astro.props;
+
+// Icons SVG
+const icons: Record<string, string> = {
+  info: `<svg class="shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/></svg>`,
+  error: `<svg class="shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/></svg>`,
+  warn: `<svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M8.257 3.099c.366-.446.976-.566 1.464-.29.487.277.716.872.54 1.405L8.93 8.684a1 1 0 0 0 .07.768l.347.694c.293.586-.092 1.291-.768 1.291H9a1 1 0 0 1-.768-1.291l.347-.694a1 1 0 0 0 .07-.768l-1.33-4.47c-.176-.533.053-1.128.54-1.405.488-.276 1.098-.156 1.464.29Z"/></svg>`,
+};
+
+// Alert class
+const alertClassMap: Record<string, string> = {
+  info: "text-blue-800 bg-blue-50 dark:text-blue-400",
+  error: "text-red-800 bg-red-50 dark:text-red-400",
+  warn: "text-yellow-800 bg-yellow-50 dark:text-yellow-400",
+};
+
+// fallback icon if type is not found
+const icon = icons[type] ?? icons["info"];
+const alertClass = alertClassMap[type] ?? alertClassMap["info"];
+const typeLabel = Object.keys(icons).includes(type) ? type : "info";
+---
+
+<div
+  class={`flex p-4 mb-4 text-sm rounded-lg dark:bg-gray-800 ${alertClass}`}
+  role="alert"
+>
+  <span set:html={icon} />
+  <span class="sr-only">{typeLabel}</span>
+  <div>
+    <p class="mb-2 text-gray-600 dark:text-gray-400">
+      <slot />
+    </p>
+  </div>
+</div>
