@@ -2,16 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 import ProgressBar from "@/components/ProgressBar";
 import Celebration from "@/components/Celebration";
 import InstructionsModal from "@/components/InstructionsModal";
+import TextQuestion from "@/components/TextQuestion";
+import TrueFalseQuestion from "@/components/TrueFalseQuestion";
+import MultiSelectQuestion from "./MultiSelectQuestion";
+import MatchingQuestion from "./MatchingQuestion";
+import FillInTheBlankQuestion from "./FillInTheBlankQuestion";
+import type { Question } from "@/types";
 
 export default function Quiz({ topic }: { topic: string }) {
-    const [allQuestions, setAllQuestions] = useState<any[]>([]);
-    const [questions, setQuestions] = useState<any[]>([]);
-    const [answers, setAnswers] = useState<any[]>([]);
-    const [results, setResults] = useState<(string | null)[]>([]);
+    const [allQuestions, setAllQuestions] = useState<Question[]>([]);
+    const [questions, setQuestions] = useState<Question[]>([]);
+    const [answers, setAnswers] = useState<(string | string[])[]>([]);
+    const [results, setResults] = useState<("correct" | "incorrect" | null)[]>([]);
     const [visible, setVisible] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -35,30 +40,24 @@ export default function Quiz({ topic }: { topic: string }) {
         return shuffled.slice(0, 10);
     };
 
+    const generateEmptyAnswers = (questions: any[]) => {
+        return questions.map((q) =>
+            q.type === "multi-select" || q.type === "matching" || q.type === "fill-in-the-blank"
+            ? []
+            : ""
+        );
+    };
+
     const newQuiz = () => {
         const picked = pickRandomQuestions();
         setQuestions(picked);
-        setAnswers(picked.map((q) =>
-            q.type === "multi-select" || q.type === "matching" || q.type === "fill-in-the-blank" ? [] : ""
-        ));
-        setResults(new Array(picked.length).fill(null));
-        setVisible(true);
-    };
-
-    const startQuiz = () => {
-        const picked = pickRandomQuestions();
-        setQuestions(picked);
-        setAnswers(picked.map((q) =>
-            q.type === "multi-select" || q.type === "matching" || q.type === "fill-in-the-blank" ? [] : ""
-        ));
+        setAnswers(generateEmptyAnswers(picked));
         setResults(new Array(picked.length).fill(null));
         setVisible(true);
     };
 
     const resetQuiz = () => {
-        setAnswers(questions.map((q) =>
-            q.type === "multi-select" || q.type === "matching" || q.type === "fill-in-the-blank" ? [] : ""
-        ));
+        setAnswers(generateEmptyAnswers(questions));
         setResults(new Array(questions.length).fill(null));
     };
 
@@ -96,12 +95,6 @@ export default function Quiz({ topic }: { topic: string }) {
         }
     };
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
-        const newAnswers = [...answers];
-        newAnswers[index] = e.target.value;
-        setAnswers(newAnswers);
-    };
-
     const handleSelect = (index: number, value: string) => {
         const newAnswers = [...answers];
         newAnswers[index] = value;
@@ -123,6 +116,33 @@ export default function Quiz({ topic }: { topic: string }) {
 
     const [showModal, setShowModal] = useState(false);
 
+    const handleAnswerChange = (index: number, value: any) => {
+        const newAnswers = [...answers];
+        newAnswers[index] = value;
+        setAnswers(newAnswers);
+    };
+
+    const handleMatchingChange = (index: number, values: string[]) => {
+        const q = questions[index];
+        if (q.type !== "matching") return;
+        const filteredValues = values.filter((v) => v !== "");
+        const isComplete = filteredValues.length === q.pairs.length && values.every((v) => v);
+
+        console.log("Pairs:", q.pairs);
+        console.log("Question:", q);
+        console.log("Answer:", answers[index]);
+        console.log("Matching values:", values);
+        console.log("Is complete:", isComplete);
+
+        const newAnswers = [...answers];
+        newAnswers[index] = values;
+        setAnswers(newAnswers);
+
+        if (isComplete) {
+            checkAnswer(index, values);
+        }
+    };
+
     if (loading) return <p>Loading quiz...</p>;
 
     return (
@@ -142,19 +162,14 @@ export default function Quiz({ topic }: { topic: string }) {
                     <InstructionsModal open={showModal} onClose={() => setShowModal(false)} />
                     {!visible ? (
                         <button
-                            onClick={() => {
-                                if (questions.length === 0) {
-                                    newQuiz();
-                                } else {
-                                    setVisible(true);
-                                }
-                            }}
+                            onClick={newQuiz}
                             disabled={error || allQuestions.length === 0}
-                            className={`px-6 py-2 text-sm rounded transition ${error || allQuestions.length === 0
+                            className={`px-6 py-2 text-sm rounded transition ${
+                                error || allQuestions.length === 0
                                 ? "bg-gray-400 text-white cursor-not-allowed"
                                 : "bg-blue-600 text-white hover:bg-blue-700"
-                                }`}
-                        >
+                            }`}
+                            >
                             {error || allQuestions.length === 0 ? "Quiz Not Available" : "Start Quiz"}
                         </button>
                     ) : (
@@ -197,125 +212,54 @@ export default function Quiz({ topic }: { topic: string }) {
                             </div>
                             <p className="font-medium">{q.question}</p>
                             {q.type === "text" && (
-                                <input
-                                    key={`${i}-${results[i]}`}
-                                    ref={(el) => (inputRefs.current[i] = el)}
-                                    type="text"
-                                    value={answers[i]}
-                                    onChange={(e) => handleChange(e, i)}
-                                    onKeyDown={(e) => handleInput(e, i)}
-                                    className={`w-full px-4 py-2 rounded border outline-none transition-all duration-300 focus:ring-2 focus:ring-blue-500
-                                  ${results[i] === "correct"
-                                            ? "border-green-500 bg-green-400 text-black animate-bounceFast"
-                                            : results[i] === "incorrect"
-                                                ? "border-red-500 bg-red-400 text-black animate-shake"
-                                                : "border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                                        }`}
-                                    placeholder="Type your answer and press Enter"
+                                <TextQuestion
+                                value={answers[i]}
+                                onChange={(val) => handleAnswerChange(i, val)}
+                                onKeyDown={(e) => handleInput(e, i)}
+                                result={results[i]}
                                 />
                             )}
                             {q.type === "true-false" && (
-                                <div className="flex gap-4">
-                                    {["true", "false"].map((val) => (
-                                        <button
-                                            key={val}
-                                            onClick={() => handleSelect(i, val)}
-                                            disabled={results[i] !== null}
-                                            className={`
-                                                px-4 py-2 rounded border transition focus:outline-none focus:ring-2 focus:ring-blue-500
-                                                ${results[i] !== null
-                                                    ? val === answers[i]
-                                                        ? val === String(questions[i].answer)
-                                                            ? "bg-green-500 text-white"
-                                                            : "bg-red-500 text-white"
-                                                        : "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300"
-                                                    : "bg-white text-gray-800 hover:bg-blue-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
-                                                }
-                                              `}
-                                        >
-                                            {val.charAt(0).toUpperCase() + val.slice(1)}
-                                        </button>
-                                    ))}
-                                </div>
+                                <TrueFalseQuestion
+                                    question={q}
+                                    index={i}
+                                    answer={answers[i]}
+                                    result={results[i]}
+                                    onSelect={handleSelect}
+                                />
                             )}
                             {q.type === "matching" && (
-                                <div className="space-y-2">
-                                    {q.pairs.map((pair, idx) => {
-                                        const rightOptions = [...q.pairs.map(p => p.right)].sort();
-                                        return (
-                                            <div key={idx} className="flex items-center gap-4">
-                                                <span>{pair.left}</span>
-                                                <select
-                                                    value={answers[i]?.[idx] || ""}
-                                                    onChange={(e) => {
-                                                        const newAnswers = [...answers];
-                                                        const newMatching = [...(newAnswers[i] || [])];
-                                                        newMatching[idx] = e.target.value;
-                                                        newAnswers[i] = newMatching;
-                                                        setAnswers(newAnswers);
-                                                        checkAnswer(i, newMatching);
-                                                    }}
-                                                    disabled={results[i] !== null}
-                                                    className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-                                                >
-                                                    <option value="">Select</option>
-                                                    {rightOptions.map((r) => (
-                                                        <option key={r} value={r}>{r}</option>
-                                                    ))}
-                                                </select>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
+                                <MatchingQuestion
+                                    question={q}
+                                    index={i}
+                                    answer={answers[i]}
+                                    result={results[i]}
+                                    onChange={handleMatchingChange}
+                                />
                             )}
                             {q.type === "fill-in-the-blank" && (
-                                <p className="text-lg">
-                                    {q.question.split("___").map((chunk, idx, arr) => (
-                                        <span key={idx}>
-                                            {chunk}
-                                            {idx < arr.length - 1 && (
-                                                <input
-                                                    type="text"
-                                                    value={answers[i]?.[idx] || ""}
-                                                    onChange={(e) => {
-                                                        const newAnswers = [...answers];
-                                                        const newFill = [...(newAnswers[i] || [])];
-                                                        newFill[idx] = e.target.value;
-                                                        newAnswers[i] = newFill;
-                                                        setAnswers(newAnswers);
-                                                    }}
-                                                    onKeyDown={(e) => {
-                                                        if (e.key === "Enter") checkAnswer(i, answers[i]);
-                                                    }}
-                                                    className="inline-block w-24 mx-1 border-b border-gray-400 bg-transparent text-center"
-                                                />
-                                            )}
-                                        </span>
-                                    ))}
-                                </p>
+                                <FillInTheBlankQuestion
+                                    question={q}
+                                    index={i}
+                                    answer={answers[i]}
+                                    result={results[i]}
+                                    onChange={(idx, newFill) => {
+                                    const newAnswers = [...answers];
+                                    newAnswers[idx] = newFill;
+                                    setAnswers(newAnswers);
+                                    }}
+                                    onCheck={(idx, filled) => checkAnswer(idx, filled)}
+                                />
                             )}
                             {q.type === "multi-select" && (
-                                <div className="space-y-2">
-                                    {q.options?.map((opt) => (
-                                        <label key={opt} className="flex items-center gap-2">
-                                            <input
-                                                type="checkbox"
-                                                checked={(answers[i] as string[]).includes(opt)}
-                                                onChange={() => handleCheckboxToggle(i, opt)}
-                                                disabled={results[i] === "correct"}
-                                                className="accent-blue-600"
-                                            />
-                                            <span>{opt}</span>
-                                        </label>
-                                    ))}
-                                    <button
-                                        onClick={() => submitMultiSelect(i)}
-                                        disabled={results[i] === "correct"}
-                                        className="mt-2 px-4 py-2 text-sm rounded bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50"
-                                    >
-                                        Submit
-                                    </button>
-                                </div>
+                                <MultiSelectQuestion
+                                    question={q}
+                                    index={i}
+                                    answer={answers[i]}
+                                    result={results[i]}
+                                    onToggle={handleCheckboxToggle}
+                                    onSubmit={submitMultiSelect}
+                                />
                             )}
                             {results[i] === "correct" && <p className="text-green-600 text-sm">✅ Correct!</p>}
                             {results[i] === "incorrect" && (
